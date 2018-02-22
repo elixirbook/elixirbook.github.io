@@ -2,13 +2,33 @@
     "docs": [
         {
             "location": "/", 
-            "text": "ElixirBook is an attempt to write a beginner friendly book about \nElixir\n and \nPhoenix\n, which I write to better memorize things myself, because I heard that writing about something is the best way to learn and memorize something better.\n\n\nYou can find the source code for this book at GitHub:\n\nElixirBook\n /\n\nelixirbook.github.io\n\n\nI am \nArif Hussain Bangash\n, a Geologist turned web developer.", 
+            "text": "About this book\n|\n\n\nElixirBook is an attempt to write a beginner friendly book about \nElixir\n and \nPhoenix\n, which I write to better memorize things myself, because I heard that writing about something is the best way to learn and memorize something better.\n\n\nYou can find the source code for this book at GitHub:\n\nElixirBook\n /\n\nelixirbook.github.io\n\n\nI am \nArif Hussain Bangash\n, a Geologist turned web developer.", 
             "title": "Home"
+        }, 
+        {
+            "location": "/#about-this-book", 
+            "text": "ElixirBook is an attempt to write a beginner friendly book about  Elixir  and  Phoenix , which I write to better memorize things myself, because I heard that writing about something is the best way to learn and memorize something better.  You can find the source code for this book at GitHub: ElixirBook  / elixirbook.github.io  I am  Arif Hussain Bangash , a Geologist turned web developer.", 
+            "title": "About this book"
         }, 
         {
             "location": "/installation/", 
             "text": "To install Elixir, follow the \ninstallation guide\n at Elixir's official website.", 
             "title": "Installation"
+        }, 
+        {
+            "location": "/introduction/", 
+            "text": "History of Elixir\n|\n\n\nIn 2010, a very influential rubyist and Rails core team member Jos\u00e9 Valim started using Erlang for pieces of his Rails apps with higher need for better concurrency. But he missed some features in Erlang, so he decided to create a new programming language which wil run on Erlang VM (BEAM).\n\n\nOn Jan 9, 2011 Jos\u00e9 Valim initialized a new git repository for this language and called it Elixir.\n\n\n\n\nAbout the language\n|\n\n\nElixir is a function, dynamic language with easier scalability and maintainability. It runs Erlang VM which is refined and battle tested for decades. Scalability, concurrency, fault-tolernace and hot code reloading are some of the characteristics of the Erlang VM (BEAM).", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/introduction/#history-of-elixir", 
+            "text": "In 2010, a very influential rubyist and Rails core team member Jos\u00e9 Valim started using Erlang for pieces of his Rails apps with higher need for better concurrency. But he missed some features in Erlang, so he decided to create a new programming language which wil run on Erlang VM (BEAM).  On Jan 9, 2011 Jos\u00e9 Valim initialized a new git repository for this language and called it Elixir.", 
+            "title": "History of Elixir"
+        }, 
+        {
+            "location": "/introduction/#about-the-language", 
+            "text": "Elixir is a function, dynamic language with easier scalability and maintainability. It runs Erlang VM which is refined and battle tested for decades. Scalability, concurrency, fault-tolernace and hot code reloading are some of the characteristics of the Erlang VM (BEAM).", 
+            "title": "About the language"
         }
     ]
 }
