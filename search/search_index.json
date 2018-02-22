@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "ElixirBook is an attempt to write a beginner friend book about \nElixir\n and \nPhoenix\n, which I write to better memorize things myself, because I heard that writing about something is the best way to learn and memorize something better.\n\n\nI am \nArif Hussain Bangash\n, a Geologist turned web developer.\n\n\nYou can find the source code for ElixirBook at GitHub:\n\nElixirBook\n /\n\nelixirbook.github.io", 
+            "text": "ElixirBook is an attempt to write a beginner friendly book about \nElixir\n and \nPhoenix\n, which I write to better memorize things myself, because I heard that writing about something is the best way to learn and memorize something better.\n\n\nI am \nArif Hussain Bangash\n, a Geologist turned web developer.\n\n\nYou can find the source code for ElixirBook at GitHub:\n\nElixirBook\n /\n\nelixirbook.github.io", 
             "title": "Home"
         }, 
         {
