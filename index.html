@@ -99,21 +99,35 @@
       </a>
     
     
-      <header class="md-header" data-md-component="header">
+      <!-- Application header -->
+<header class="md-header" data-md-component="header">
+
+  <!-- Top-level navigation -->
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
+
+      <!-- Link to home -->
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="." title="ElixirBook" class="md-header-nav__button md-logo">
-          
+        <a href="."
+            title="ElixirBook"
+            class="md-header-nav__button md-logo">
+          <!-- 
             <i class="md-icon">opacity</i>
-          
+           -->
+          <span>|></span>
         </a>
       </div>
+
+      <!-- Button to toggle drawer -->
       <div class="md-flex__cell md-flex__cell--shrink">
-        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+        <label class="md-icon md-icon--menu md-header-nav__button"
+            for="drawer"></label>
       </div>
+
+      <!-- Header title -->
       <div class="md-flex__cell md-flex__cell--stretch">
-        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+        <div class="md-flex__ellipsis md-header-nav__title"
+            data-md-component="title">
           
             
               <span class="md-header-nav__topic">
@@ -126,10 +140,15 @@
           
         </div>
       </div>
+
+      <!-- Button to open search dialogue -->
       <div class="md-flex__cell md-flex__cell--shrink">
         
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            <label class="md-icon md-icon--search md-header-nav__button"
+                for="search"></label>
+
+            <!-- Search interface -->
             
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="search"></label>
@@ -156,6 +175,8 @@
           
         
       </div>
+
+      <!-- Repository containing source -->
       
         <div class="md-flex__cell md-flex__cell--shrink">
           <div class="md-header-nav__source">
@@ -298,6 +319,18 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="getting-started/" title="Getting started" class="md-nav__link">
+      Getting started
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -392,6 +425,27 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+        
+          <a href="getting-started/" title="Getting started" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Getting started
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
