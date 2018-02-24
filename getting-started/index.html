@@ -360,7 +360,7 @@
 <p>On Mac, open terminal by pressing <code>⌘</code> + <code>space</code> and then typing <code>terminal</code> to find it. On windows click on the start button and the type <code>cmd</code> to open command prompt. On Ubuntu press <code>ctrl</code> + <code>alt</code> + <code>t</code> to open terminal.</p>
 </div>
 <h2 id="interactive-elixir">Interactive Elixir<a class="headerlink" href="#interactive-elixir" title="Permanent link">|&gt;</a></h2>
-<p>Open command line / terminal, type iex and press enter. It will output the Erlang and Elixir versions and the prompot will change to <code>iex(1)&gt;</code>. The number will change every time you execute a new command.</p>
+<p>Open command line / terminal, type <code>iex</code> and press enter. It will output the Erlang and Elixir versions and the prompot will change to <code>iex(1)&gt;</code>. The number will change every time you execute a new command.</p>
 <p>IEx is a <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">repl (Read-Eval-Print Loop)</a>, it will take a single input, evaluate it and return the result. We can tell it to return some <a href="https://techterms.com/definition/string">string</a>, we can add, subtract, divide and multiply two or more than two numbers and get the result back. We can run elixir's built-in functions inside iex, or we can even write our own functions and modules inside iex, we can also run functions written in some file from iex. A single command we enter iex is called an expression.</p>
 <p>Let's open iex and enter the following expressions.</p>
 <div class="codehilite"><pre><span></span><span class="n">iex</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">&gt;</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span>
@@ -377,19 +377,25 @@
 <span class="no">true</span>
 <span class="n">iex</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="o">&gt;</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">&gt;</span> <span class="mi">3</span>
 <span class="no">true</span>
-<span class="n">iex</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span><span class="o">&gt;</span> <span class="n">length</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span>
-<span class="mi">9</span>
+<span class="n">iex</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span><span class="o">&gt;</span> <span class="n">length</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+<span class="mi">4</span>
 <span class="n">iex</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span><span class="o">&gt;</span> <span class="nc">Float</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="mf">15.3373</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 <span class="mf">15.33</span>
 <span class="n">iex</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">&gt;</span> <span class="nc">Calendar.ISO</span><span class="o">.</span><span class="n">leap_year?</span><span class="p">(</span><span class="mi">2018</span><span class="p">)</span>
 <span class="no">false</span>
 <span class="n">iex</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span><span class="o">&gt;</span> <span class="nc">Calendar.ISO</span><span class="o">.</span><span class="n">leap_year?</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
 <span class="no">true</span>
+<span class="n">iex</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span><span class="o">&gt;</span> <span class="n">add</span> <span class="o">=</span> <span class="k">fn</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="k">end</span>
+<span class="c1">#Function&lt;12.99386804/2 in :erl_eval.expr/5&gt;</span>
+<span class="n">iex</span><span class="p">(</span><span class="mi">13</span><span class="p">)</span> <span class="n">add</span><span class="o">.</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="mi">3</span>
 </pre></div>
 
 
-<p>The last 4 expressions need explanation</p>
-<p>(section incomplete...)</p>
+<p>The last 6 expressions need explanation. In Elixir a function is enclosed in a module, and when we call that function we have to prepend it with the module name, e.g., in expression # 9, <code>Float</code> is the name of module and <code>floor</code> is the name of function.</p>
+<p>Sometimes we have a module name, then sub-module name and then the function name, like in expression # 10 and # 11, <code>Calendar</code> is the name of module, <code>IOS</code> is the name of sub-module and <code>leap_year?</code> is the name of function. </p>
+<p>Anonymous functions are an exception to this rule, like in expression # 12 and 13 we define and call an anonymous function respectively. In that case we call the function by putting name of the function, then dot and then the arguments.</p>
+<p>Function <code>length</code> used in expression #9, have a module named <code>Kernel</code>, but we don't need to prepend name of the module. This kind of functions are inlined by the Elixir compiler into the :erlang module and are called <code>BIFs</code> (built-in internal functions). <code>Kernel</code> module have many <code>BIFs</code>.</p>
                 
                   
                 
