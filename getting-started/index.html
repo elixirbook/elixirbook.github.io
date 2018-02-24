@@ -392,10 +392,10 @@
 </pre></div>
 
 
-<p>The last 6 expressions need explanation. In Elixir a function is enclosed in a module, and when we call that function we have to prepend it with the module name, e.g., in expression # 9, <code>Float</code> is the name of module and <code>floor</code> is the name of function.</p>
-<p>Sometimes we have a module name, then sub-module name and then the function name, like in expression # 10 and # 11, <code>Calendar</code> is the name of module, <code>IOS</code> is the name of sub-module and <code>leap_year?</code> is the name of function. </p>
-<p>Anonymous functions are an exception to this rule, like in expression # 12 and 13 we define and call an anonymous function respectively. In that case we call the function by putting name of the function, then dot and then the arguments.</p>
-<p>Function <code>length</code> used in expression #9, have a module named <code>Kernel</code>, but we don't need to prepend name of the module. This kind of functions are inlined by the Elixir compiler into the :erlang module and are called <code>BIFs</code> (built-in internal functions). <code>Kernel</code> module have many <code>BIFs</code>.</p>
+<p>The last 6 expressions need explanation. In Elixir a function is enclosed in a module, and when we call that function we have to prepend it with the module name, e.g., in expression #9, <code>Float</code> is the name of module and <code>floor</code> is the name of function.</p>
+<p>Sometimes we have a module name, then sub-module name and then the function name, like in expression #10 and #11, <code>Calendar</code> is the name of module, <code>IOS</code> is the name of sub-module and <code>leap_year?</code> is the name of function. </p>
+<p>Anonymous functions are an exception to this rule, like in expression #12 and #13 we define and call an anonymous function respectively. In that case we call the function by putting name of the function, then dot and then the arguments.</p>
+<p>Function <code>length</code> used in expression #9, have a module named <code>Kernel</code>, but we don't need to prepend name of the module. This kind of functions are inlined by the Elixir compiler into the <code>:erlang</code> module and are called <code>BIFs</code> (built-in internal functions), that's why we don't need to prepend the module name to these functions. <code>Kernel</code> module have many <code>BIFs</code>.</p>
                 
                   
                 
